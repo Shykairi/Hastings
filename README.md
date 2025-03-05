@@ -16,13 +16,36 @@ Este repositório faz parte de um projeto integrador, tendo como objetivo a cria
 [Print da Tela de Lobby](https://github.com/annascooby/Hastings/blob/5bfe628414833d1783c9faf8e8cf5541b3030b7e/PI_3_Defensores_de_Hastings/PI_3_Defensores_de_Hastings/Form1.Designer.cs)
 
 ## 👥 Equipe de Desenvolvimento
-| Nome | GitHub |
-|------|--------|
-| ![Foto](https://avatars.githubusercontent.com/u/123590731?v=4) Aline Douaki | [GitHub Profile](https://github.com/alinedka) |
-| ![Foto](https://avatars.githubusercontent.com/u/161133027?s=400&u=eb1f3e39cb9d28babfd658aab78f75a2b805e6ad&v=4) Anna Clara Nunes | [GitHub Profile](https://github.com/annascooby) |
-| ![Foto](https://avatars.githubusercontent.com/u/152815498?v=4) Fernando Barreto | [GitHub Profile](https://github.com/Kalimbinha) |
-| ![Foto](https://avatars.githubusercontent.com/u/160083859?v=4) João Michael | [GitHub Profile](https://github.com/JmZgerr95) |
-| ![Foto](https://avatars.githubusercontent.com/u/142936260?v=4) William Takahashi | [GitHub Profile](https://github.com/Shykairi) |
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://avatars.githubusercontent.com/u/123590731?v=4" width="100px" height="100px"/><br>
+      <b>Aline Douaki</b><br>
+      <a href="https://github.com/alinedka">GitHub Profile</a>
+    </td>
+    <td align="center">
+      <img src="https://avatars.githubusercontent.com/u/161133027?s=400&u=eb1f3e39cb9d28babfd658aab78f75a2b805e6ad&v=4" width="100px" height="100px"/><br>
+      <b>Anna Clara Nunes</b><br>
+      <a href="https://github.com/annascooby">GitHub Profile</a>
+    </td>
+    <td align="center">
+      <img src="https://avatars.githubusercontent.com/u/152815498?v=4" width="100px" height="100px"/><br>
+      <b>Fernando Barreto</b><br>
+      <a href="https://github.com/Kalimbinha">GitHub Profile</a>
+    </td>
+    <td align="center">
+      <img src="https://avatars.githubusercontent.com/u/160083859?v=4" width="100px" height="100px"/><br>
+      <b>João Michael Seegerer</b><br>
+      <a href="https://github.com/JmZgerr95">GitHub Profile</a>
+    </td>
+    <td align="center">
+      <img src="https://avatars.githubusercontent.com/u/142936260?v=4" width="100px" height="100px"/><br>
+      <b>William Takahashi</b><br>
+      <a href="https://github.com/Shykairi">GitHub Profile</a>
+    </td>
+  </tr>
+</table>
+
 
 ## 🎲 Sobre o Jogo *King Me! (1998)*
 "Com o anúncio da aposentadoria do Rei, a pirueta para a sucessão começa! Todos os súditos cozinham tortas, pintam, a debutante duquesa agita sobre a preparação para a sucessão no castelo. Um dos favoritos pode alcançar o trono. Mas, cuidado! Ele vai exigir manobras inteligentes e posicionamento seletivo para estar no lugar certo, na hora certa para alcançar a coroa!
