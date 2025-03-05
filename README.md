@@ -13,7 +13,7 @@ Este repositório faz parte de um projeto integrador, tendo como objetivo a cria
 ⚙️ Windows
 
 ## 🕹️ LOBBY
-(https://github.com/annascooby/Hastings/blob/main/imagens/antes%20de%20rodar.jpeg)(https://github.com/annascooby/Hastings/blob/5bfe628414833d1783c9faf8e8cf5541b3030b7e/PI_3_Defensores_de_Hastings/PI_3_Defensores_de_Hastings/Form1.Designer.cs)
+[![form](https://github.com/annascooby/Hastings/blob/main/imagens/antes%20de%20rodar.jpeg)](https://github.com/annascooby/Hastings/blob/5bfe628414833d1783c9faf8e8cf5541b3030b7e/PI_3_Defensores_de_Hastings/PI_3_Defensores_de_Hastings/Form1.Designer.cs)
 
 ## 👥 Equipe de Desenvolvimento
 <table>
