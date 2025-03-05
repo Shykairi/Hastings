@@ -45,19 +45,19 @@ namespace PI_3_Defensores_de_Hastings
 
             if (nome == string.Empty)
             {
-                MessageBox.Show("Insira o nome da partida: ");
+                MessageBox.Show("Insira o nome da partida: ", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (senha == string.Empty)
             {
-                MessageBox.Show("Insira a sua senha: ");
+                MessageBox.Show("Insira a sua senha: ", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (grupo == string.Empty)
             {
-                MessageBox.Show("Insira o nome do grupo: ");
+                MessageBox.Show("Insira o nome do grupo: ", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
         }
@@ -117,6 +117,14 @@ namespace PI_3_Defensores_de_Hastings
 
         }
 
-        
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void idDaPartida_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
