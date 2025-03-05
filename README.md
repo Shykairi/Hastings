@@ -5,9 +5,13 @@ Este projeto faz parte de um trabalho integrador com o objetivo de criar um sist
 
 ## 🛠️ Tecnologias Utilizadas:
 🔹 C#
+
 🏗️ .NET Framework/Core
+
 🖥️ Visual Studio
+
 ⚙️ Windows
+
 
 [Tela de Lobby](https://github.com/annascooby/Hastings/blob/5bfe628414833d1783c9faf8e8cf5541b3030b7e/PI_3_Defensores_de_Hastings/PI_3_Defensores_de_Hastings/Form1.Designer.cs)
 
