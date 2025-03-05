@@ -48,7 +48,6 @@ Este projeto faz parte de um trabalho integrador com o objetivo de criar um sist
    cd Hastings-main
    ```
 3. Compile e execute o sistema. ▶️
-   ```
 
 ## 📄 Licença
 Este projeto está licenciado pela equipe [Defensores de Hastings](https://github.com/Defensores-de-Hastings).
