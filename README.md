@@ -6,14 +6,14 @@ Este projeto faz parte de um trabalho integrador com o objetivo de criar um sist
 ## 🛠️ Tecnologias Utilizadas:
 🔹 C#
 
-🏗️ .NET Framework/Core
+🏗️ .NET Framework
 
 🖥️ Visual Studio
 
 ⚙️ Windows
 
 
-[Tela de Lobby](https://github.com/annascooby/Hastings/blob/5bfe628414833d1783c9faf8e8cf5541b3030b7e/PI_3_Defensores_de_Hastings/PI_3_Defensores_de_Hastings/Form1.Designer.cs)
+[Print da Tela de Lobby](https://github.com/annascooby/Hastings/blob/5bfe628414833d1783c9faf8e8cf5541b3030b7e/PI_3_Defensores_de_Hastings/PI_3_Defensores_de_Hastings/Form1.Designer.cs)
 
 ## 👥 Equipe de Desenvolvimento
 | Nome | GitHub |
@@ -25,6 +25,7 @@ Este projeto faz parte de um trabalho integrador com o objetivo de criar um sist
 | ![Foto](https://avatars.githubusercontent.com/u/142936260?v=4) William Takahashi | [GitHub Profile](https://github.com/Shykairi) |
 
 ## 🎲 Sobre o Jogo *King Me! (1998)*
+"Com o anúncio da aposentadoria do Rei, a pirueta para a sucessão começa! Todos os súditos cozinham tortas, pintam, a debutante duquesa agita sobre a preparação para a sucessão no castelo. Um dos favoritos pode alcançar o trono. Mas, cuidado! Ele vai exigir manobras inteligentes e posicionamento seletivo para estar no lugar certo, na hora certa para alcançar a coroa!
 *King Me!* é um jogo de tabuleiro de estratégia no qual os jogadores disputam para coroar seus peões como Rei. Criado em 1998, o jogo envolve movimentação tática e tomada de decisões para maximizar as chances de ganhar.
 
 ### 🔹 Como Jogar
