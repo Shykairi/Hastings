@@ -1,7 +1,7 @@
 # 👑 Projeto Integrador | Sistema Autônomo - King Me!
 
 ## 📌 Sobre o Projeto
-Este projeto faz parte de um trabalho integrador com o objetivo de criar um sistema autônomo que jogue *King Me!* (1998) de forma eficiente, utilizando a linguagem C#.
+Este repositório faz parte de um projeto integrador, tendo como objetivo a criação de um sistema autônomo que jogue *King Me!* (1998) de forma eficiente, utilizando a linguagem C#.
 
 ## 🛠️ Tecnologias Utilizadas:
 🔹 C#
