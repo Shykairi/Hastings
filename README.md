@@ -48,7 +48,7 @@ Este repositório faz parte de um projeto integrador, tendo como objetivo a cria
 
 
 ## 🎲 Sobre o Jogo *King Me! (1998)*
-"Com o anúncio da aposentadoria do Rei, a pirueta para a sucessão começa! Todos os súditos cozinham tortas, pintam, a debutante duquesa agita sobre a preparação para a sucessão no castelo. Um dos favoritos pode alcançar o trono. Mas, cuidado! Ele vai exigir manobras inteligentes e posicionamento seletivo para estar no lugar certo, na hora certa para alcançar a coroa!
+"Com o anúncio da aposentadoria do Rei, a pirueta para a sucessão começa! Todos os súditos cozinham tortas, pintam, a debutante duquesa agita sobre a preparação para a sucessão no castelo. Um dos favoritos pode alcançar o trono. Mas, cuidado! Ele vai exigir manobras inteligentes e posicionamento seletivo para estar no lugar certo, na hora certa para alcançar a coroa!"
 *King Me!* é um jogo de tabuleiro de estratégia no qual os jogadores disputam para coroar seus peões como Rei. Criado em 1998, o jogo envolve movimentação tática e tomada de decisões para maximizar as chances de ganhar.
 
 ### 🔹 Como Jogar
