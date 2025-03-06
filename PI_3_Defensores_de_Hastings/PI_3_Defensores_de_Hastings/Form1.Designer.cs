@@ -38,10 +38,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.idDaPartida = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lblControleDeVersao = new System.Windows.Forms.Label();
+            this.btnBuscarPartida = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
+            this.lblData = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnPartida
@@ -70,6 +71,7 @@
             this.label1.Size = new System.Drawing.Size(57, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Partida:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // nomeDaPartida
             // 
@@ -162,33 +164,33 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "ID:";
             // 
-            // label6
+            // lblControleDeVersao
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Location = new System.Drawing.Point(757, 421);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 29);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "1.0";
+            this.lblControleDeVersao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblControleDeVersao.AutoSize = true;
+            this.lblControleDeVersao.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
+            this.lblControleDeVersao.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblControleDeVersao.Location = new System.Drawing.Point(757, 421);
+            this.lblControleDeVersao.Name = "lblControleDeVersao";
+            this.lblControleDeVersao.Size = new System.Drawing.Size(46, 29);
+            this.lblControleDeVersao.TabIndex = 10;
+            this.lblControleDeVersao.Text = "1.0";
             // 
-            // button1
+            // btnBuscarPartida
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(15, 187);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Buscar Partidas";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnBuscarPartida.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscarPartida.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnBuscarPartida.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnBuscarPartida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarPartida.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.btnBuscarPartida.ForeColor = System.Drawing.Color.Transparent;
+            this.btnBuscarPartida.Location = new System.Drawing.Point(15, 187);
+            this.btnBuscarPartida.Name = "btnBuscarPartida";
+            this.btnBuscarPartida.Size = new System.Drawing.Size(111, 23);
+            this.btnBuscarPartida.TabIndex = 11;
+            this.btnBuscarPartida.Text = "Buscar Partidas";
+            this.btnBuscarPartida.UseVisualStyleBackColor = false;
+            this.btnBuscarPartida.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // listBox1
             // 
@@ -216,6 +218,17 @@
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(139, 214);
             this.listBox2.TabIndex = 14;
+            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            // 
+            // lblData
+            // 
+            this.lblData.AutoSize = true;
+            this.lblData.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblData.Location = new System.Drawing.Point(432, 216);
+            this.lblData.Name = "lblData";
+            this.lblData.Size = new System.Drawing.Size(81, 13);
+            this.lblData.TabIndex = 15;
+            this.lblData.Text = "Data da Partida";
             // 
             // Form1
             // 
@@ -223,10 +236,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblData);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnBuscarPartida);
+            this.Controls.Add(this.lblControleDeVersao);
             this.Controls.Add(this.idDaPartida);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -260,10 +274,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox idDaPartida;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblControleDeVersao;
+        private System.Windows.Forms.Button btnBuscarPartida;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Label lblData;
     }
 }
 

@@ -16,7 +16,7 @@ namespace PI_3_Defensores_de_Hastings
         public Form1()
         {
             InitializeComponent();
-            label6.Text = Jogo.versao;
+            lblControleDeVersao.Text = Jogo.versao;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -71,7 +71,15 @@ namespace PI_3_Defensores_de_Hastings
             string nomeDaPartida = dadosDaPartida[1];
             string dataDaPartida = dadosDaPartida[2];
 
+            lblData.Text = dataDaPartida;
+
             string retorno = Jogo.ListarJogadores(idPartida);
+            if (retorno.Substring(0,4) == "ERRO")
+            {
+                MessageBox.Show("Ocorreu um erro:\n" + retorno.Substring(5),"Defensores de Hastings", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             retorno = retorno.Replace("\r", "");
             string[] jogadores = retorno.Split('\n');
 
@@ -123,6 +131,16 @@ namespace PI_3_Defensores_de_Hastings
         }
 
         private void idDaPartida_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
