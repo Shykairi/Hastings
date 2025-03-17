@@ -13,27 +13,19 @@ namespace PI_3_Defensores_de_Hastings
 {
     public partial class Form1 : Form
     {
+        public string versao { get; set; }
+
         public Form1()
         {
             InitializeComponent();
-            lblControleDeVersao.Text = Jogo.versao;
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            string retorno = Jogo.ListarPartidas("T");
             
-
-            retorno = retorno.Replace("\r", "");
-            retorno = retorno.Substring(0, retorno.Length - 1);
-            string[] partidas = retorno.Split('\n');
-
-            listBox1.Items.Clear();
-            for (int i = 0; i < partidas.Length - 1; i++)
-            {
-                listBox1.Items.Add(partidas[i]);
-            }
         }
+
+     public void AtualizarTela()
+        {
+            //lblControleDeVersao.Text = versao;
+        }
+      
         private void btnPartida_Click(object sender, EventArgs e)
         {
             string nome = nomeDaPartida.Text;
@@ -62,32 +54,11 @@ namespace PI_3_Defensores_de_Hastings
             }
         }
 
+       
+
         private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            string partida = listBox1.SelectedItem.ToString();
-            string[] dadosDaPartida = partida.Split(',');
-
-            int idPartida = Convert.ToInt32(dadosDaPartida[0]);
-            string nomeDaPartida = dadosDaPartida[1];
-            string dataDaPartida = dadosDaPartida[2];
-
-            lblData.Text = dataDaPartida;
-
-            string retorno = Jogo.ListarJogadores(idPartida);
-            if (retorno.Substring(0,4) == "ERRO")
-            {
-                MessageBox.Show("Ocorreu um erro:\n" + retorno.Substring(5),"Defensores de Hastings", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            retorno = retorno.Replace("\r", "");
-            string[] jogadores = retorno.Split('\n');
-
-            listBox2.Items.Clear();
-            for (int i = 0; i < jogadores.Length - 1; i++)
-            {
-                listBox2.Items.Add(jogadores[i]);
-            }
+          
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -141,6 +112,21 @@ namespace PI_3_Defensores_de_Hastings
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnChamaForms2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void lblControleDeVersao_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void lblData_Click(object sender, EventArgs e)
         {
 
         }

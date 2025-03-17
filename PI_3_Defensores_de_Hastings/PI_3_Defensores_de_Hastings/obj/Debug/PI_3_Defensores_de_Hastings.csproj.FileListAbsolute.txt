@@ -37,3 +37,6 @@ C:\Users\willi\Downloads\Hastings\PI_3_Defensores_de_Hastings\PI_3_Defensores_de
 C:\Users\willi\Downloads\Hastings\PI_3_Defensores_de_Hastings\PI_3_Defensores_de_Hastings\obj\Debug\PI_3_Def.94BA8437.Up2Date
 C:\Users\willi\Downloads\Hastings\PI_3_Defensores_de_Hastings\PI_3_Defensores_de_Hastings\obj\Debug\PI_3_Defensores_de_Hastings.exe
 C:\Users\willi\Downloads\Hastings\PI_3_Defensores_de_Hastings\PI_3_Defensores_de_Hastings\obj\Debug\PI_3_Defensores_de_Hastings.pdb
+C:\Users\willi\Downloads\Hastings\PI_3_Defensores_de_Hastings\PI_3_Defensores_de_Hastings\obj\Debug\PI_3_Defensores_de_Hastings.frmLobby.resources
+C:\Users\willi\Downloads\Hastings\PI_3_Defensores_de_Hastings\PI_3_Defensores_de_Hastings\obj\Debug\PI_3_Defensores_de_Hastings.frmTelaInicial.resources
+C:\Users\willi\Downloads\Hastings\PI_3_Defensores_de_Hastings\PI_3_Defensores_de_Hastings\obj\Debug\PI_3_Defensores_de_Hastings.frmLobbyDaPartida.resources

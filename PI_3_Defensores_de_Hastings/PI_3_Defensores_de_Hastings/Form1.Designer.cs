@@ -38,11 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.idDaPartida = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.lblControleDeVersao = new System.Windows.Forms.Label();
-            this.btnBuscarPartida = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.lblData = new System.Windows.Forms.Label();
+            this.btnVoltaJogo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnPartida
@@ -53,9 +49,9 @@
             this.btnPartida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPartida.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.btnPartida.ForeColor = System.Drawing.Color.Transparent;
-            this.btnPartida.Location = new System.Drawing.Point(152, 111);
+            this.btnPartida.Location = new System.Drawing.Point(12, 290);
             this.btnPartida.Name = "btnPartida";
-            this.btnPartida.Size = new System.Drawing.Size(75, 23);
+            this.btnPartida.Size = new System.Drawing.Size(156, 77);
             this.btnPartida.TabIndex = 0;
             this.btnPartida.Text = "Criar";
             this.btnPartida.UseVisualStyleBackColor = false;
@@ -88,7 +84,7 @@
             this.senhaDaPartida.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.senhaDaPartida.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.senhaDaPartida.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.senhaDaPartida.Location = new System.Drawing.Point(140, 71);
+            this.senhaDaPartida.Location = new System.Drawing.Point(12, 130);
             this.senhaDaPartida.Name = "senhaDaPartida";
             this.senhaDaPartida.Size = new System.Drawing.Size(100, 21);
             this.senhaDaPartida.TabIndex = 4;
@@ -99,7 +95,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(138, 54);
+            this.label2.Location = new System.Drawing.Point(10, 111);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 16);
             this.label2.TabIndex = 3;
@@ -111,7 +107,7 @@
             this.nomeDoGrupo.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.nomeDoGrupo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nomeDoGrupo.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.nomeDoGrupo.Location = new System.Drawing.Point(273, 71);
+            this.nomeDoGrupo.Location = new System.Drawing.Point(13, 185);
             this.nomeDoGrupo.Name = "nomeDoGrupo";
             this.nomeDoGrupo.Size = new System.Drawing.Size(100, 21);
             this.nomeDoGrupo.TabIndex = 6;
@@ -121,7 +117,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(271, 54);
+            this.label3.Location = new System.Drawing.Point(9, 166);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 16);
             this.label3.TabIndex = 5;
@@ -146,7 +142,7 @@
             this.idDaPartida.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.idDaPartida.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.idDaPartida.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.idDaPartida.Location = new System.Drawing.Point(487, 71);
+            this.idDaPartida.Location = new System.Drawing.Point(13, 248);
             this.idDaPartida.Name = "idDaPartida";
             this.idDaPartida.ReadOnly = true;
             this.idDaPartida.Size = new System.Drawing.Size(100, 21);
@@ -158,77 +154,21 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(485, 54);
+            this.label5.Location = new System.Drawing.Point(9, 219);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(24, 16);
             this.label5.TabIndex = 8;
             this.label5.Text = "ID:";
             // 
-            // lblControleDeVersao
+            // btnVoltaJogo
             // 
-            this.lblControleDeVersao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblControleDeVersao.AutoSize = true;
-            this.lblControleDeVersao.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
-            this.lblControleDeVersao.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblControleDeVersao.Location = new System.Drawing.Point(757, 421);
-            this.lblControleDeVersao.Name = "lblControleDeVersao";
-            this.lblControleDeVersao.Size = new System.Drawing.Size(46, 29);
-            this.lblControleDeVersao.TabIndex = 10;
-            this.lblControleDeVersao.Text = "1.0";
-            // 
-            // btnBuscarPartida
-            // 
-            this.btnBuscarPartida.BackColor = System.Drawing.Color.Transparent;
-            this.btnBuscarPartida.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnBuscarPartida.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnBuscarPartida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarPartida.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.btnBuscarPartida.ForeColor = System.Drawing.Color.Transparent;
-            this.btnBuscarPartida.Location = new System.Drawing.Point(15, 187);
-            this.btnBuscarPartida.Name = "btnBuscarPartida";
-            this.btnBuscarPartida.Size = new System.Drawing.Size(111, 23);
-            this.btnBuscarPartida.TabIndex = 11;
-            this.btnBuscarPartida.Text = "Buscar Partidas";
-            this.btnBuscarPartida.UseVisualStyleBackColor = false;
-            this.btnBuscarPartida.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // listBox1
-            // 
-            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.listBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.listBox1.Font = new System.Drawing.Font("Arial", 9F);
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(15, 216);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(242, 214);
-            this.listBox1.TabIndex = 13;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged_1);
-            // 
-            // listBox2
-            // 
-            this.listBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.listBox2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.listBox2.Font = new System.Drawing.Font("Arial", 9F);
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 15;
-            this.listBox2.Location = new System.Drawing.Point(273, 216);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(139, 214);
-            this.listBox2.TabIndex = 14;
-            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
-            // 
-            // lblData
-            // 
-            this.lblData.AutoSize = true;
-            this.lblData.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblData.Location = new System.Drawing.Point(432, 216);
-            this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(81, 13);
-            this.lblData.TabIndex = 15;
-            this.lblData.Text = "Data da Partida";
+            this.btnVoltaJogo.Location = new System.Drawing.Point(690, 346);
+            this.btnVoltaJogo.Name = "btnVoltaJogo";
+            this.btnVoltaJogo.Size = new System.Drawing.Size(98, 37);
+            this.btnVoltaJogo.TabIndex = 16;
+            this.btnVoltaJogo.Text = "Voltar";
+            this.btnVoltaJogo.UseVisualStyleBackColor = true;
+            this.btnVoltaJogo.Click += new System.EventHandler(this.btnChamaForms2_Click);
             // 
             // Form1
             // 
@@ -236,11 +176,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblData);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.btnBuscarPartida);
-            this.Controls.Add(this.lblControleDeVersao);
+            this.Controls.Add(this.btnVoltaJogo);
             this.Controls.Add(this.idDaPartida);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -255,6 +191,7 @@
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lobby";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -274,11 +211,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox idDaPartida;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblControleDeVersao;
-        private System.Windows.Forms.Button btnBuscarPartida;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.Label lblData;
+        private System.Windows.Forms.Button btnVoltaJogo;
     }
 }
 
