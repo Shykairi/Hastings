@@ -95,27 +95,29 @@
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(124, 41);
+            this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenha.Location = new System.Drawing.Point(134, 41);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(94, 20);
+            this.lblSenha.Size = new System.Drawing.Size(127, 25);
             this.lblSenha.TabIndex = 4;
             this.lblSenha.Text = "Sua senha: ";
+            this.lblSenha.Click += new System.EventHandler(this.lblSenha_Click_1);
             // 
             // lblMostraSenha
             // 
             this.lblMostraSenha.AutoSize = true;
             this.lblMostraSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMostraSenha.Location = new System.Drawing.Point(133, 61);
+            this.lblMostraSenha.Location = new System.Drawing.Point(135, 66);
             this.lblMostraSenha.Name = "lblMostraSenha";
-            this.lblMostraSenha.Size = new System.Drawing.Size(0, 20);
+            this.lblMostraSenha.Size = new System.Drawing.Size(116, 20);
             this.lblMostraSenha.TabIndex = 5;
+            this.lblMostraSenha.Text = "Replace senha";
             // 
             // lblID
             // 
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(132, 91);
+            this.lblID.Location = new System.Drawing.Point(134, 98);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(82, 25);
             this.lblID.TabIndex = 6;
@@ -125,21 +127,22 @@
             // 
             this.lblMostraID.AutoSize = true;
             this.lblMostraID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMostraID.Location = new System.Drawing.Point(134, 116);
+            this.lblMostraID.Location = new System.Drawing.Point(135, 123);
             this.lblMostraID.Name = "lblMostraID";
-            this.lblMostraID.Size = new System.Drawing.Size(0, 20);
+            this.lblMostraID.Size = new System.Drawing.Size(89, 20);
             this.lblMostraID.TabIndex = 7;
+            this.lblMostraID.Text = "Replace ID";
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(227, 45);
+            this.txtSenha.Location = new System.Drawing.Point(139, 176);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(121, 20);
             this.txtSenha.TabIndex = 8;
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(227, 118);
+            this.txtID.Location = new System.Drawing.Point(139, 236);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(121, 20);
             this.txtID.TabIndex = 9;
@@ -148,19 +151,21 @@
             // lblEscreverSenha
             // 
             this.lblEscreverSenha.AutoSize = true;
-            this.lblEscreverSenha.Location = new System.Drawing.Point(224, 25);
+            this.lblEscreverSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEscreverSenha.Location = new System.Drawing.Point(135, 153);
             this.lblEscreverSenha.Name = "lblEscreverSenha";
-            this.lblEscreverSenha.Size = new System.Drawing.Size(84, 13);
+            this.lblEscreverSenha.Size = new System.Drawing.Size(147, 24);
             this.lblEscreverSenha.TabIndex = 10;
             this.lblEscreverSenha.Text = "Escrever senha:";
+            this.lblEscreverSenha.Click += new System.EventHandler(this.lblEscreverSenha_Click);
             // 
             // lblEscreverID
             // 
             this.lblEscreverID.AutoSize = true;
-            this.lblEscreverID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEscreverID.Location = new System.Drawing.Point(222, 91);
+            this.lblEscreverID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEscreverID.Location = new System.Drawing.Point(135, 209);
             this.lblEscreverID.Name = "lblEscreverID";
-            this.lblEscreverID.Size = new System.Drawing.Size(147, 25);
+            this.lblEscreverID.Size = new System.Drawing.Size(128, 24);
             this.lblEscreverID.TabIndex = 11;
             this.lblEscreverID.Text = "Escrever o ID:";
             // 
@@ -171,6 +176,7 @@
             this.lstbVerificarVez.Name = "lstbVerificarVez";
             this.lstbVerificarVez.Size = new System.Drawing.Size(202, 95);
             this.lstbVerificarVez.TabIndex = 12;
+            this.lstbVerificarVez.SelectedIndexChanged += new System.EventHandler(this.lstbVerificarVez_SelectedIndexChanged);
             // 
             // btnVerificarVez
             // 
@@ -186,7 +192,7 @@
             // 
             this.lblVez.AutoSize = true;
             this.lblVez.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVez.Location = new System.Drawing.Point(223, 382);
+            this.lblVez.Location = new System.Drawing.Point(221, 383);
             this.lblVez.Name = "lblVez";
             this.lblVez.Size = new System.Drawing.Size(158, 24);
             this.lblVez.TabIndex = 14;
@@ -226,7 +232,7 @@
             // lstbPersonagens
             // 
             this.lstbPersonagens.FormattingEnabled = true;
-            this.lstbPersonagens.Location = new System.Drawing.Point(387, 198);
+            this.lstbPersonagens.Location = new System.Drawing.Point(354, 41);
             this.lstbPersonagens.Name = "lstbPersonagens";
             this.lstbPersonagens.Size = new System.Drawing.Size(328, 147);
             this.lstbPersonagens.TabIndex = 18;
@@ -236,7 +242,7 @@
             // 
             this.lblPersonagens.AutoSize = true;
             this.lblPersonagens.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPersonagens.Location = new System.Drawing.Point(383, 171);
+            this.lblPersonagens.Location = new System.Drawing.Point(350, 14);
             this.lblPersonagens.Name = "lblPersonagens";
             this.lblPersonagens.Size = new System.Drawing.Size(122, 24);
             this.lblPersonagens.TabIndex = 19;
@@ -246,7 +252,7 @@
             // 
             this.lblSetor.AutoSize = true;
             this.lblSetor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSetor.Location = new System.Drawing.Point(735, 171);
+            this.lblSetor.Location = new System.Drawing.Point(688, 14);
             this.lblSetor.Name = "lblSetor";
             this.lblSetor.Size = new System.Drawing.Size(74, 24);
             this.lblSetor.TabIndex = 20;
@@ -255,14 +261,14 @@
             // lstbSetores
             // 
             this.lstbSetores.FormattingEnabled = true;
-            this.lstbSetores.Location = new System.Drawing.Point(739, 198);
+            this.lstbSetores.Location = new System.Drawing.Point(692, 41);
             this.lstbSetores.Name = "lstbSetores";
             this.lstbSetores.Size = new System.Drawing.Size(144, 147);
             this.lstbSetores.TabIndex = 21;
             // 
             // btnColocarPersonagem
             // 
-            this.btnColocarPersonagem.Location = new System.Drawing.Point(657, 353);
+            this.btnColocarPersonagem.Location = new System.Drawing.Point(852, 41);
             this.btnColocarPersonagem.Name = "btnColocarPersonagem";
             this.btnColocarPersonagem.Size = new System.Drawing.Size(136, 44);
             this.btnColocarPersonagem.TabIndex = 22;

@@ -115,7 +115,7 @@ namespace PI_3_Defensores_de_Hastings
             string[] vez = verificacao.Split(',');
 
             lblMostraVez.Text = vez[0];
-            lblMostraNome.Text = vez[1];
+            lblMostraNome.Text = vez[3];
         }
 
         private void lstbPersonagens_SelectedIndexChanged(object sender, EventArgs e)
@@ -124,6 +124,21 @@ namespace PI_3_Defensores_de_Hastings
         }
 
         private void lblMostraNome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSenha_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEscreverSenha_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lstbVerificarVez_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
