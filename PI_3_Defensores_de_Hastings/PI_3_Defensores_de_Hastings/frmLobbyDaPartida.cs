@@ -115,7 +115,7 @@ namespace PI_3_Defensores_de_Hastings
             string[] vez = verificacao.Split(',');
 
             lblMostraVez.Text = vez[0];
-            lblMostraNome.Text = vez[2];
+            lblMostraNome.Text = vez[1];
         }
 
         private void lstbPersonagens_SelectedIndexChanged(object sender, EventArgs e)
