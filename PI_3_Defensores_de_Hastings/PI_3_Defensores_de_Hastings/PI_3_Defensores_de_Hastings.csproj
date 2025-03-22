@@ -55,19 +55,35 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="frmLobby.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="frmLobby.Designer.cs">
+      <DependentUpon>frmLobby.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLobbyDaPartida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLobbyDaPartida.Designer.cs">
+      <DependentUpon>frmLobbyDaPartida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Partida.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmTelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTelaInicial.Designer.cs">
+      <DependentUpon>frmTelaInicial.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="frmLobby.resx">
+      <DependentUpon>frmLobby.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLobbyDaPartida.resx">
+      <DependentUpon>frmLobbyDaPartida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +94,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmTelaInicial.resx">
+      <DependentUpon>frmTelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
