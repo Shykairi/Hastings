@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using KingMeServer;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PI_3_Defensores_de_Hastings
 {
@@ -24,32 +25,63 @@ namespace PI_3_Defensores_de_Hastings
             lblMostraSenha.Text = b;
         }
 
-        
+
         private void bntComecar_Click(object sender, EventArgs e)
         {
-            string tempID = txtID.Text;
-            int ID = Convert.ToInt32(tempID);
-            string SENHA = txtSenha.Text;
-
-            Jogo.Iniciar(ID,SENHA);
-
-            ///////////////////
-            
-            string personagens = Jogo.ListarPersonagens();
-            string[] listapersonganes = personagens.Split('\r');
-            for (int i = 0; i < listapersonganes.Length; i++)
+            try
             {
-                lstbPersonagens.Items.Add(listapersonganes[i]);
+                // Validação do ID do jogador
+                if (!int.TryParse(txtID.Text, out int idDoJogador))
+                {
+                    MessageBox.Show("ID do jogador inválido. Insira um número válido.");
+                    return;
+                }
+
+                string senha = txtSenha.Text;
+
+                // Inicia o jogo
+                Jogo.Iniciar(idDoJogador, senha);
+
+                // Lista as cartas do jogador
+                string cartas = Jogo.ListarCartas(idDoJogador, senha);
+                txtCartas.Text = cartas;  // Exibe as iniciais das cartas
+
+                // Obtém a lista de personagens
+                string retorno = Jogo.ListarPersonagens();
+                retorno = retorno.Replace("\r", "").Trim();
+                string[] partidas = retorno.Split(new[] { "\r\n", "\n" }, StringSplitOptions.RemoveEmptyEntries);
+
+                Dictionary<string, string> personagensDict = new Dictionary<string, string>
+        {
+            { "A", "Adilson Konrad" }, { "B", "Beatriz Paiva" }, { "C", "Claro" }, { "D", "Douglas Baquiao" },
+            { "E", "Eduardo Takeo" }, { "G", "Guilherme Rey" }, { "H", "Heredia" }, { "K", "Karin" },
+            { "L", "Leonardo Takuno" }, { "M", "Mario Toledo" }, { "Q", "Quintas" }, { "R", "Ranulffo" },
+            { "T", "Toshio" }
+        };
+
+                lstbPersonagens.Items.Clear();
+
+                foreach (string codigo in partidas)
+                {
+                    string codigoTrimmed = codigo.Trim();
+                    lstbPersonagens.Items.Add(personagensDict.ContainsKey(codigoTrimmed) ? personagensDict[codigoTrimmed] : codigoTrimmed);
+                }
+
+                // Associar cartas com seus respectivos nomes no ListBox TXB_Cartas
+                TXBCartas.Items.Clear();
+                foreach (char letra in cartas)
+                {
+                    string letraStr = letra.ToString();
+                    TXBCartas.Items.Add(personagensDict.ContainsKey(letraStr) ? personagensDict[letraStr] : letraStr);
+                }
             }
-
-            string setores = Jogo.ListarSetores();
-            string[] listaSetores = setores.Split('\r');
-
-            for (int i = 0; i < listaSetores.Length; i++)
+            catch (Exception ex)
             {
-                lstbSetores.Items.Add(listaSetores[i]);
+                MessageBox.Show("Ocorreu um erro: " + ex.Message);
             }
         }
+
+
         private void lstbJogadores_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -141,6 +173,36 @@ namespace PI_3_Defensores_de_Hastings
         private void lstbVerificarVez_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnColocarPersonagem_Click(object sender, EventArgs e)
+        {
+       
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Jogo.ListarSetores();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Jogo.ListarSetores();
+        }
+
+        private void lstbSetores_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

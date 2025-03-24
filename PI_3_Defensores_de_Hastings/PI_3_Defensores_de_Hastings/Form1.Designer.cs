@@ -49,9 +49,10 @@
             this.btnPartida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPartida.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.btnPartida.ForeColor = System.Drawing.Color.Transparent;
-            this.btnPartida.Location = new System.Drawing.Point(12, 290);
+            this.btnPartida.Location = new System.Drawing.Point(16, 357);
+            this.btnPartida.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPartida.Name = "btnPartida";
-            this.btnPartida.Size = new System.Drawing.Size(156, 77);
+            this.btnPartida.Size = new System.Drawing.Size(208, 95);
             this.btnPartida.TabIndex = 0;
             this.btnPartida.Text = "Criar";
             this.btnPartida.UseVisualStyleBackColor = false;
@@ -62,9 +63,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(10, 54);
+            this.label1.Location = new System.Drawing.Point(13, 66);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 16);
+            this.label1.Size = new System.Drawing.Size(71, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "Partida:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -74,19 +76,22 @@
             this.nomeDaPartida.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.nomeDaPartida.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nomeDaPartida.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.nomeDaPartida.Location = new System.Drawing.Point(12, 71);
+            this.nomeDaPartida.Location = new System.Drawing.Point(16, 87);
+            this.nomeDaPartida.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nomeDaPartida.Name = "nomeDaPartida";
-            this.nomeDaPartida.Size = new System.Drawing.Size(100, 21);
+            this.nomeDaPartida.Size = new System.Drawing.Size(208, 25);
             this.nomeDaPartida.TabIndex = 2;
+            this.nomeDaPartida.TextChanged += new System.EventHandler(this.nomeDaPartida_TextChanged);
             // 
             // senhaDaPartida
             // 
             this.senhaDaPartida.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.senhaDaPartida.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.senhaDaPartida.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.senhaDaPartida.Location = new System.Drawing.Point(12, 130);
+            this.senhaDaPartida.Location = new System.Drawing.Point(16, 160);
+            this.senhaDaPartida.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.senhaDaPartida.Name = "senhaDaPartida";
-            this.senhaDaPartida.Size = new System.Drawing.Size(100, 21);
+            this.senhaDaPartida.Size = new System.Drawing.Size(208, 25);
             this.senhaDaPartida.TabIndex = 4;
             this.senhaDaPartida.TextChanged += new System.EventHandler(this.textBox1_TextChanged_2);
             // 
@@ -95,9 +100,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(10, 111);
+            this.label2.Location = new System.Drawing.Point(13, 137);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 16);
+            this.label2.Size = new System.Drawing.Size(64, 19);
             this.label2.TabIndex = 3;
             this.label2.Text = "Senha:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -107,19 +113,23 @@
             this.nomeDoGrupo.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.nomeDoGrupo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nomeDoGrupo.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.nomeDoGrupo.Location = new System.Drawing.Point(13, 185);
+            this.nomeDoGrupo.Location = new System.Drawing.Point(17, 228);
+            this.nomeDoGrupo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nomeDoGrupo.Name = "nomeDoGrupo";
-            this.nomeDoGrupo.Size = new System.Drawing.Size(100, 21);
+            this.nomeDoGrupo.Size = new System.Drawing.Size(207, 25);
             this.nomeDoGrupo.TabIndex = 6;
+            this.nomeDoGrupo.Text = "Defensores de Hastings";
+            this.nomeDoGrupo.TextChanged += new System.EventHandler(this.nomeDoGrupo_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(9, 166);
+            this.label3.Location = new System.Drawing.Point(12, 204);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 16);
+            this.label3.Size = new System.Drawing.Size(65, 19);
             this.label3.TabIndex = 5;
             this.label3.Text = "Grupo:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -130,9 +140,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(260, 9);
+            this.label4.Location = new System.Drawing.Point(347, 11);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(251, 24);
+            this.label4.Size = new System.Drawing.Size(327, 32);
             this.label4.TabIndex = 7;
             this.label4.Text = "Defensores de Hastings\r\n";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -142,10 +153,11 @@
             this.idDaPartida.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.idDaPartida.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.idDaPartida.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.idDaPartida.Location = new System.Drawing.Point(13, 248);
+            this.idDaPartida.Location = new System.Drawing.Point(17, 305);
+            this.idDaPartida.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.idDaPartida.Name = "idDaPartida";
             this.idDaPartida.ReadOnly = true;
-            this.idDaPartida.Size = new System.Drawing.Size(100, 21);
+            this.idDaPartida.Size = new System.Drawing.Size(207, 25);
             this.idDaPartida.TabIndex = 9;
             this.idDaPartida.TextChanged += new System.EventHandler(this.idDaPartida_TextChanged);
             // 
@@ -154,17 +166,19 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(9, 219);
+            this.label5.Location = new System.Drawing.Point(12, 270);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(24, 16);
+            this.label5.Size = new System.Drawing.Size(31, 19);
             this.label5.TabIndex = 8;
             this.label5.Text = "ID:";
             // 
             // btnVoltaJogo
             // 
-            this.btnVoltaJogo.Location = new System.Drawing.Point(690, 346);
+            this.btnVoltaJogo.Location = new System.Drawing.Point(920, 426);
+            this.btnVoltaJogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVoltaJogo.Name = "btnVoltaJogo";
-            this.btnVoltaJogo.Size = new System.Drawing.Size(98, 37);
+            this.btnVoltaJogo.Size = new System.Drawing.Size(131, 46);
             this.btnVoltaJogo.TabIndex = 16;
             this.btnVoltaJogo.Text = "Voltar";
             this.btnVoltaJogo.UseVisualStyleBackColor = true;
@@ -172,10 +186,10 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.btnVoltaJogo);
             this.Controls.Add(this.idDaPartida);
             this.Controls.Add(this.label5);
@@ -187,9 +201,10 @@
             this.Controls.Add(this.nomeDaPartida);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnPartida);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(816, 489);
+            this.MinimumSize = new System.Drawing.Size(1082, 591);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lobby";

@@ -130,5 +130,15 @@ namespace PI_3_Defensores_de_Hastings
         {
 
         }
+
+        private void nomeDoGrupo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nomeDaPartida_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
