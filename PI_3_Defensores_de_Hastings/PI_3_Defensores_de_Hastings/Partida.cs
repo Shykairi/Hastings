@@ -17,7 +17,7 @@ namespace PI_3_Defensores_de_Hastings
 
         public static List<Partida> ListarPartidas()
         {
-            string retorno = Jogo.ListarPartidas("T");
+            string retorno = Jogo.ListarPartidas("A");
 
             retorno = retorno.Replace("\r", "");
             retorno = retorno.Substring(0, retorno.Length - 1);
