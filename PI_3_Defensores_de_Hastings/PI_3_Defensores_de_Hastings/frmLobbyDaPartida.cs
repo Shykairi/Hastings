@@ -17,15 +17,20 @@ namespace PI_3_Defensores_de_Hastings
     {
         private int _idSala;
         
+
+        
         public frmLobbyDaPartida(int idSala, string a, string b)
         {
             InitializeComponent();
             _idSala = idSala;
+
             lblMostraID.Text = a;
             lblMostraSenha.Text = b;
+
+            lblEstadoJogo.Visible = false;
         }
 
-
+        
         private void bntComecar_Click(object sender, EventArgs e)
         {
             try
@@ -79,8 +84,40 @@ namespace PI_3_Defensores_de_Hastings
             {
                 MessageBox.Show("Ocorreu um erro: " + ex.Message);
             }
+
+            string tempSetores = Jogo.ListarSetores();
+            string[] setores = tempSetores.Split('\r');
+
+            lstbSetores.Items.Clear();
+            for(int i = 0; i < setores.Length; i++)
+            {
+                lstbSetores.Items.Add(setores[i]);
+            }
         }
 
+        private void btnColocarPersonagem_Click(object sender, EventArgs e)
+        {   
+            string senha = txtSenha.Text;
+            string TempSetor = txtEscolheSetor.Text;
+            int setor = Convert.ToInt32(TempSetor);
+            string personagem = txtEscolhaPersonagem.Text;
+            string TempIdJogador = lblMostraID.Text;
+            int IdJogador = Convert.ToInt32(TempIdJogador);
+
+            string estadoDoJogo = Jogo.ColocarPersonagem(IdJogador,senha,setor,personagem);
+
+            lstEstadoDoJogo.Items.Clear();
+            lstEstadoDoJogo.Items.Add(estadoDoJogo);
+            
+
+            //Essa label serve para pegar o estado do jogo em forma de string para que eu possa passar para o proximo forms
+            lblEstadoJogo.Text = estadoDoJogo;
+            
+
+            
+        }
+
+        
 
         private void lstbJogadores_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -147,7 +184,7 @@ namespace PI_3_Defensores_de_Hastings
             string[] vez = verificacao.Split(',');
 
             lblMostraVez.Text = vez[0];
-            lblMostraNome.Text = vez[1];
+            
         }
 
         private void lstbPersonagens_SelectedIndexChanged(object sender, EventArgs e)
@@ -175,10 +212,7 @@ namespace PI_3_Defensores_de_Hastings
 
         }
 
-        private void btnColocarPersonagem_Click(object sender, EventArgs e)
-        {
        
-        }
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -203,6 +237,36 @@ namespace PI_3_Defensores_de_Hastings
         private void label1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void lblSetor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCartas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVerMapa_Click(object sender, EventArgs e)
+        {
+            string estadodojogo = lblEstadoJogo.Text;
+
+            Form2 mapa = new Form2(estadodojogo);
+            mapa.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+
+            
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
