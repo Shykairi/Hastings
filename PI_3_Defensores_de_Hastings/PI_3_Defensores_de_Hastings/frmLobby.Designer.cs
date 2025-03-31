@@ -43,28 +43,33 @@
             // 
             this.dgvPartidas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.dgvPartidas.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvPartidas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dgvPartidas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Sitka Display", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvPartidas.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPartidas.GridColor = System.Drawing.Color.White;
-            this.dgvPartidas.Location = new System.Drawing.Point(12, 12);
+            this.dgvPartidas.Location = new System.Drawing.Point(14, 18);
+            this.dgvPartidas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvPartidas.Name = "dgvPartidas";
-            this.dgvPartidas.Size = new System.Drawing.Size(501, 426);
+            this.dgvPartidas.RowHeadersWidth = 51;
+            this.dgvPartidas.Size = new System.Drawing.Size(584, 623);
             this.dgvPartidas.TabIndex = 0;
             this.dgvPartidas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnEntrarPartida
             // 
-            this.btnEntrarPartida.Location = new System.Drawing.Point(560, 281);
+            this.btnEntrarPartida.Font = new System.Drawing.Font("Sitka Display", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrarPartida.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnEntrarPartida.Location = new System.Drawing.Point(638, 411);
+            this.btnEntrarPartida.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEntrarPartida.Name = "btnEntrarPartida";
-            this.btnEntrarPartida.Size = new System.Drawing.Size(228, 59);
+            this.btnEntrarPartida.Size = new System.Drawing.Size(266, 86);
             this.btnEntrarPartida.TabIndex = 1;
             this.btnEntrarPartida.Text = "Entrar";
             this.btnEntrarPartida.UseVisualStyleBackColor = true;
@@ -72,9 +77,12 @@
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(560, 379);
+            this.btnVoltar.Font = new System.Drawing.Font("Sitka Display", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnVoltar.Location = new System.Drawing.Point(638, 554);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(228, 59);
+            this.btnVoltar.Size = new System.Drawing.Size(266, 86);
             this.btnVoltar.TabIndex = 2;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
@@ -82,42 +90,51 @@
             // 
             // txtbSenhaDaSala
             // 
-            this.txtbSenhaDaSala.Location = new System.Drawing.Point(560, 107);
+            this.txtbSenhaDaSala.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtbSenhaDaSala.Location = new System.Drawing.Point(642, 156);
+            this.txtbSenhaDaSala.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtbSenhaDaSala.Name = "txtbSenhaDaSala";
-            this.txtbSenhaDaSala.Size = new System.Drawing.Size(228, 20);
+            this.txtbSenhaDaSala.Size = new System.Drawing.Size(266, 24);
             this.txtbSenhaDaSala.TabIndex = 18;
             // 
             // txtbNomeDoJogador
             // 
-            this.txtbNomeDoJogador.Location = new System.Drawing.Point(560, 48);
+            this.txtbNomeDoJogador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtbNomeDoJogador.Location = new System.Drawing.Point(642, 70);
+            this.txtbNomeDoJogador.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtbNomeDoJogador.Name = "txtbNomeDoJogador";
-            this.txtbNomeDoJogador.Size = new System.Drawing.Size(228, 20);
+            this.txtbNomeDoJogador.Size = new System.Drawing.Size(266, 24);
             this.txtbNomeDoJogador.TabIndex = 17;
             this.txtbNomeDoJogador.TextChanged += new System.EventHandler(this.txtbNomeDoJogador_TextChanged);
             // 
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(557, 91);
+            this.lblSenha.Font = new System.Drawing.Font("Sitka Display", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenha.Location = new System.Drawing.Point(713, 128);
+            this.lblSenha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(80, 13);
+            this.lblSenha.Size = new System.Drawing.Size(114, 24);
             this.lblSenha.TabIndex = 16;
             this.lblSenha.Text = "Senha da Sala:";
             // 
             // lblNomeJogador
             // 
             this.lblNomeJogador.AutoSize = true;
-            this.lblNomeJogador.Location = new System.Drawing.Point(557, 32);
+            this.lblNomeJogador.Font = new System.Drawing.Font("Sitka Display", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeJogador.Location = new System.Drawing.Point(702, 42);
+            this.lblNomeJogador.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNomeJogador.Name = "lblNomeJogador";
-            this.lblNomeJogador.Size = new System.Drawing.Size(94, 13);
+            this.lblNomeJogador.Size = new System.Drawing.Size(141, 24);
             this.lblNomeJogador.TabIndex = 15;
             this.lblNomeJogador.Text = "Nome do Jogador:";
             // 
             // frmLobby
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.DarkRed;
+            this.ClientSize = new System.Drawing.Size(934, 658);
             this.Controls.Add(this.txtbSenhaDaSala);
             this.Controls.Add(this.txtbNomeDoJogador);
             this.Controls.Add(this.lblSenha);
@@ -125,7 +142,10 @@
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnEntrarPartida);
             this.Controls.Add(this.dgvPartidas);
-            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Font = new System.Drawing.Font("Sitka Display", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmLobby";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLobby";

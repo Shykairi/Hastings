@@ -27,26 +27,31 @@ namespace PI_3_Defensores_de_Hastings // :) Define o namespace da aplicação
 
         private void btnPartida_Click(object sender, EventArgs e) // :) Evento de clique do botão btnPartida
         {
-            if (string.IsNullOrWhiteSpace(nomeDaPartida.Text))
+            string nome = nomeDaPartida.Text; // :) Armazena o texto do controle nomeDaPartida na variável 'nome'
+            string senha = senhaDaPartida.Text; // :) Armazena o texto do controle senhaDaPartida na variável 'senha'
+            string grupo = nomeDoGrupo.Text; // :) Armazena o texto do controle nomeDoGrupo na variável 'grupo'
+
+            string id = KingMeServer.Jogo.CriarPartida(nome, senha, grupo); // :) Cria uma partida chamando o método CriarPartida e armazena o ID retornado
+            idDaPartida.Text = id; // :) Exibe o ID da partida no controle idDaPartida
+
+            if (nome == string.Empty) // :) Verifica se o nome está vazio
             {
-                MessageBox.Show("Insira o nome da partida.", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(senhaDaPartida.Text))
-            {
-                MessageBox.Show("Insira a sua senha.", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(nomeDoGrupo.Text))
-            {
-                MessageBox.Show("Insira o nome do grupo.", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                MessageBox.Show("Insira o nome da partida: ", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error); // :) Exibe mensagem de erro se o nome estiver vazio
+                return; // :) Encerra o método se o nome estiver vazio
             }
 
-            string id = Jogo.CriarPartida(nomeDaPartida.Text, senhaDaPartida.Text, nomeDoGrupo.Text);
-            idDaPartida.Text = id;
+            if (senha == string.Empty) // :) Verifica se a senha está vazia
+            {
+                MessageBox.Show("Insira a sua senha: ", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error); // :) Exibe mensagem de erro se a senha estiver vazia
+                return; // :) Encerra o método se a senha estiver vazia
+            }
+
+            if (grupo == string.Empty) // :) Verifica se o nome do grupo está vazio
+            {
+                MessageBox.Show("Insira o nome do grupo: ", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error); // :) Exibe mensagem de erro se o grupo estiver vazio
+                return; // :) Encerra o método se o grupo estiver vazio
+            }
         }
-
 
         private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e) // :) Evento de alteração de seleção do listBox1 (primeira ocorrência)
         {
@@ -98,7 +103,7 @@ namespace PI_3_Defensores_de_Hastings // :) Define o namespace da aplicação
 
         private void btnChamaForms2_Click(object sender, EventArgs e) // :) Evento de clique do botão btnChamaForms2
         {
-            Close(); // :) Fecha o formulário atual
+            this.Close(); // :) Fecha o formulário atual
         }
 
         private void lblControleDeVersao_Click(object sender, EventArgs e) // :) Evento de clique no label lblControleDeVersao

@@ -1,46 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\",
+  "WorkspaceRootPath": "C:\\Users\\fernando.barreto\\OneDrive - Solutta\\Documentos\\GitHub\\Hastings\\Hastings-main\\Hastings-main\\PI_3_Defensores_de_Hastings\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|c:\\users\\barre\\documents\\github\\hastings\\pi_3_defensores_de_hastings\\pi_3_defensores_de_hastings\\frmlobby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|solutionrelative:pi_3_defensores_de_hastings\\frmlobby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|c:\\users\\barre\\documents\\github\\hastings\\pi_3_defensores_de_hastings\\pi_3_defensores_de_hastings\\frmlobby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|solutionrelative:pi_3_defensores_de_hastings\\frmlobby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|c:\\users\\barre\\documents\\github\\hastings\\pi_3_defensores_de_hastings\\pi_3_defensores_de_hastings\\frmtelainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|c:\\users\\fernando.barreto\\onedrive - solutta\\documentos\\github\\hastings\\hastings-main\\hastings-main\\pi_3_defensores_de_hastings\\pi_3_defensores_de_hastings\\frmtelainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|solutionrelative:pi_3_defensores_de_hastings\\frmtelainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|c:\\users\\barre\\documents\\github\\hastings\\pi_3_defensores_de_hastings\\pi_3_defensores_de_hastings\\frmtelainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|solutionrelative:pi_3_defensores_de_hastings\\frmtelainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|c:\\users\\barre\\documents\\github\\hastings\\pi_3_defensores_de_hastings\\pi_3_defensores_de_hastings\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|solutionrelative:pi_3_defensores_de_hastings\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|c:\\users\\barre\\documents\\github\\hastings\\pi_3_defensores_de_hastings\\pi_3_defensores_de_hastings\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|solutionrelative:pi_3_defensores_de_hastings\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\pi_3_defensores_de_hastings\\frmlobbydapartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|solutionrelative:pi_3_defensores_de_hastings\\frmlobbydapartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\pi_3_defensores_de_hastings\\frmlobbydapartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|c:\\users\\fernando.barreto\\onedrive - solutta\\documentos\\github\\hastings\\hastings-main\\hastings-main\\pi_3_defensores_de_hastings\\pi_3_defensores_de_hastings\\frmlobbydapartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|solutionrelative:pi_3_defensores_de_hastings\\frmlobbydapartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|c:\\users\\barre\\documents\\github\\hastings\\pi_3_defensores_de_hastings\\pi_3_defensores_de_hastings\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|c:\\users\\fernando.barreto\\onedrive - solutta\\documentos\\github\\hastings\\hastings-main\\hastings-main\\pi_3_defensores_de_hastings\\pi_3_defensores_de_hastings\\frmlobby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|solutionrelative:pi_3_defensores_de_hastings\\frmlobby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|c:\\users\\fernando.barreto\\onedrive - solutta\\documentos\\github\\hastings\\hastings-main\\hastings-main\\pi_3_defensores_de_hastings\\pi_3_defensores_de_hastings\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|solutionrelative:pi_3_defensores_de_hastings\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\pi_3_defensores_de_hastings\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|solutionrelative:pi_3_defensores_de_hastings\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|c:\\users\\fernando.barreto\\onedrive - solutta\\documentos\\github\\hastings\\hastings-main\\hastings-main\\pi_3_defensores_de_hastings\\pi_3_defensores_de_hastings\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2C8B9F6-BF35-479E-B852-4360B48E9291}|PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings.csproj|solutionrelative:pi_3_defensores_de_hastings\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,143 +30,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmLobby.cs",
-              "DocumentMoniker": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\frmLobby.cs",
-              "RelativeDocumentMoniker": "PI_3_Defensores_de_Hastings\\frmLobby.cs",
-              "ToolTip": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\frmLobby.cs",
-              "RelativeToolTip": "PI_3_Defensores_de_Hastings\\frmLobby.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAA0wGQAAAAbAAAAAAAAAA==",
+              "Title": "frmTelaInicial.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\fernando.barreto\\OneDrive - Solutta\\Documentos\\GitHub\\Hastings\\Hastings-main\\Hastings-main\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\frmTelaInicial.cs",
+              "RelativeDocumentMoniker": "PI_3_Defensores_de_Hastings\\frmTelaInicial.cs",
+              "ToolTip": "C:\\Users\\fernando.barreto\\OneDrive - Solutta\\Documentos\\GitHub\\Hastings\\Hastings-main\\Hastings-main\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\frmTelaInicial.cs [Design]",
+              "RelativeToolTip": "PI_3_Defensores_de_Hastings\\frmTelaInicial.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T19:50:03.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T18:23:06.657Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "frmLobbyDaPartida.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\fernando.barreto\\OneDrive - Solutta\\Documentos\\GitHub\\Hastings\\Hastings-main\\Hastings-main\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\frmLobbyDaPartida.cs",
+              "RelativeDocumentMoniker": "PI_3_Defensores_de_Hastings\\frmLobbyDaPartida.cs",
+              "ToolTip": "C:\\Users\\fernando.barreto\\OneDrive - Solutta\\Documentos\\GitHub\\Hastings\\Hastings-main\\Hastings-main\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\frmLobbyDaPartida.cs [Design]",
+              "RelativeToolTip": "PI_3_Defensores_de_Hastings\\frmLobbyDaPartida.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T18:23:02.012Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "frmLobby.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\frmLobby.cs",
+              "DocumentMoniker": "C:\\Users\\fernando.barreto\\OneDrive - Solutta\\Documentos\\GitHub\\Hastings\\Hastings-main\\Hastings-main\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\frmLobby.cs",
               "RelativeDocumentMoniker": "PI_3_Defensores_de_Hastings\\frmLobby.cs",
-              "ToolTip": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\frmLobby.cs [Design]",
+              "ToolTip": "C:\\Users\\fernando.barreto\\OneDrive - Solutta\\Documentos\\GitHub\\Hastings\\Hastings-main\\Hastings-main\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\frmLobby.cs [Design]",
               "RelativeToolTip": "PI_3_Defensores_de_Hastings\\frmLobby.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T19:50:00.5Z",
+              "WhenOpened": "2025-03-31T18:22:56.485Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "frmTelaInicial.cs",
-              "DocumentMoniker": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\frmTelaInicial.cs",
-              "RelativeDocumentMoniker": "PI_3_Defensores_de_Hastings\\frmTelaInicial.cs",
-              "ToolTip": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\frmTelaInicial.cs",
-              "RelativeToolTip": "PI_3_Defensores_de_Hastings\\frmTelaInicial.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAcwCQAAAAYAAAAAAAAAA==",
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\fernando.barreto\\OneDrive - Solutta\\Documentos\\GitHub\\Hastings\\Hastings-main\\Hastings-main\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\Form2.cs",
+              "RelativeDocumentMoniker": "PI_3_Defensores_de_Hastings\\Form2.cs",
+              "ToolTip": "C:\\Users\\fernando.barreto\\OneDrive - Solutta\\Documentos\\GitHub\\Hastings\\Hastings-main\\Hastings-main\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\Form2.cs [Design]",
+              "RelativeToolTip": "PI_3_Defensores_de_Hastings\\Form2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T19:48:11.485Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmTelaInicial.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\frmTelaInicial.cs",
-              "RelativeDocumentMoniker": "PI_3_Defensores_de_Hastings\\frmTelaInicial.cs",
-              "ToolTip": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\frmTelaInicial.cs [Design]",
-              "RelativeToolTip": "PI_3_Defensores_de_Hastings\\frmTelaInicial.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T19:48:09.213Z",
+              "WhenOpened": "2025-03-31T18:22:53.749Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\Form1.cs",
-              "RelativeDocumentMoniker": "PI_3_Defensores_de_Hastings\\Form1.cs",
-              "ToolTip": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\Form1.cs",
-              "RelativeToolTip": "PI_3_Defensores_de_Hastings\\Form1.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAApwHwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T19:43:23.4Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\fernando.barreto\\OneDrive - Solutta\\Documentos\\GitHub\\Hastings\\Hastings-main\\Hastings-main\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\Form1.cs",
               "RelativeDocumentMoniker": "PI_3_Defensores_de_Hastings\\Form1.cs",
-              "ToolTip": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\fernando.barreto\\OneDrive - Solutta\\Documentos\\GitHub\\Hastings\\Hastings-main\\Hastings-main\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\Form1.cs [Design]",
               "RelativeToolTip": "PI_3_Defensores_de_Hastings\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T19:43:20.135Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\Form2.cs",
-              "RelativeDocumentMoniker": "PI_3_Defensores_de_Hastings\\Form2.cs",
-              "ToolTip": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\Form2.cs",
-              "RelativeToolTip": "PI_3_Defensores_de_Hastings\\Form2.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAcwG4AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T11:19:21.346Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Form2.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\Form2.cs",
-              "RelativeDocumentMoniker": "PI_3_Defensores_de_Hastings\\Form2.cs",
-              "ToolTip": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\Form2.cs [Design]",
-              "RelativeToolTip": "PI_3_Defensores_de_Hastings\\Form2.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T11:19:19.533Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmLobbyDaPartida.cs",
-              "DocumentMoniker": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\frmLobbyDaPartida.cs",
-              "RelativeDocumentMoniker": "PI_3_Defensores_de_Hastings\\frmLobbyDaPartida.cs",
-              "ToolTip": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\frmLobbyDaPartida.cs",
-              "RelativeToolTip": "PI_3_Defensores_de_Hastings\\frmLobbyDaPartida.cs",
-              "ViewState": "AgIAAOYAAAAAAAAAAAApwPAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T11:19:17.591Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmLobbyDaPartida.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\frmLobbyDaPartida.cs",
-              "RelativeDocumentMoniker": "PI_3_Defensores_de_Hastings\\frmLobbyDaPartida.cs",
-              "ToolTip": "C:\\Users\\barre\\Documents\\GitHub\\Hastings\\PI_3_Defensores_de_Hastings\\PI_3_Defensores_de_Hastings\\frmLobbyDaPartida.cs [Design]",
-              "RelativeToolTip": "PI_3_Defensores_de_Hastings\\frmLobbyDaPartida.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T12:23:33.537Z",
+              "WhenOpened": "2025-03-31T18:22:44.05Z",
               "EditorCaption": " [Design]"
             }
           ]
