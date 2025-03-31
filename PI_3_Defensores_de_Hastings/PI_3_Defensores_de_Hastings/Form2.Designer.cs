@@ -35,19 +35,20 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(-4, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(-5, -1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(518, 721);
+            this.pictureBox1.Size = new System.Drawing.Size(691, 887);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnColocarPerso
             // 
-            this.btnColocarPerso.Location = new System.Drawing.Point(615, 585);
+            this.btnColocarPerso.Location = new System.Drawing.Point(820, 720);
+            this.btnColocarPerso.Margin = new System.Windows.Forms.Padding(4);
             this.btnColocarPerso.Name = "btnColocarPerso";
-            this.btnColocarPerso.Size = new System.Drawing.Size(75, 23);
+            this.btnColocarPerso.Size = new System.Drawing.Size(100, 28);
             this.btnColocarPerso.TabIndex = 1;
             this.btnColocarPerso.Text = "Colocar Personagem";
             this.btnColocarPerso.UseVisualStyleBackColor = true;
@@ -55,12 +56,12 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1100, 721);
+            this.ClientSize = new System.Drawing.Size(687, 887);
             this.Controls.Add(this.btnColocarPerso);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";

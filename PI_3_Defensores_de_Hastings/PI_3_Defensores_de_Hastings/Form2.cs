@@ -3,60 +3,61 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using KingMeServer;
 
 namespace PI_3_Defensores_de_Hastings
 {
     public partial class Form2 : Form
     {
-        private string estadoJogo; // :) Armazena o estado do jogo como string
-        private string[] arEstadoDoJogo; // :) Array para dividir os valores do estado do jogo
-        private Panel pnlPersonagem; // :) Painel onde o personagem será exibido
+        private string estadoJogo;
+        private string[] arEstadoDoJogo;
+        private Panel pnlPersonagem;
 
         public Form2(string estadoDoJogo)
         {
-            InitializeComponent(); // :) Inicializa os componentes do formulário
-            estadoJogo = estadoDoJogo; // :) Atribui o estado do jogo recebido como parâmetro
-            arEstadoDoJogo = estadoJogo.Split(','); // :) Divide a string do estado do jogo em partes
-            CarregarImagem(); // :) Chama o método para carregar a imagem de fundo
+            InitializeComponent();
+            estadoJogo = estadoDoJogo;
+            arEstadoDoJogo = estadoJogo.Split(',');
+            CarregarImagem();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            CarregarImagem(); // :) Recarrega a imagem ao clicar no PictureBox
+            CarregarImagem();
         }
 
         private void CarregarImagem()
         {
-            string imagePath = @"C:\\Users\\willi\\Downloads\\Hastings\\imagens\\tabuleiro.jpg"; // :) Caminho da imagem de fundo
+            string imagePath = @"C:\Users\fernando.barreto\OneDrive - Solutta\Documentos\GitHub\Hastings\PI_3_Defensores_de_Hastings\imagens\tabuleiro.jpg";
 
-            if (File.Exists(imagePath)) // :) Verifica se o arquivo existe
+            if (File.Exists(imagePath))
             {
-                if (pictureBox1.Image == null) // :) Só carrega a imagem se ainda não estiver carregada
+                if (pictureBox1.Image == null)
                 {
-                    using (FileStream fs = new FileStream(imagePath, FileMode.Open, FileAccess.Read)) // :) Usa FileStream para evitar bloqueio do arquivo
+                    using (FileStream fs = new FileStream(imagePath, FileMode.Open, FileAccess.Read))
                     {
-                        pictureBox1.Image = Image.FromStream(fs); // :) Carrega a imagem no PictureBox
+                        pictureBox1.Image = Image.FromStream(fs);
                     }
                 }
             }
             else
             {
-                MessageBox.Show("Imagem não encontrada!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error); // :) Exibe mensagem de erro se a imagem não for encontrada
+                MessageBox.Show("Imagem não encontrada!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void Colocar1()
         {
-            if (arEstadoDoJogo == null || arEstadoDoJogo.Length < 2) // :) Verifica se há informações suficientes no estado do jogo
+            if (arEstadoDoJogo == null || arEstadoDoJogo.Length < 2)
             {
-                MessageBox.Show("Dados do jogo incompletos!"); // :) Exibe um alerta caso os dados estejam incompletos
+                MessageBox.Show("Dados do jogo incompletos!");
                 return;
             }
 
-            string nivel = arEstadoDoJogo[0]; // :) Obtém o nível do jogo
-            string letraPersonagem = arEstadoDoJogo[1].Replace("'", "").Trim().ToUpper(); // :) Remove aspas simples e converte a letra para maiúscula
+            string nivel = arEstadoDoJogo[0];
+            string letraPersonagem = arEstadoDoJogo[1].Replace("'", "").Trim().ToUpper();
 
-            Dictionary<string, string> personagensDict = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase) // :) Dicionário que relaciona as letras aos arquivos de imagem
+            Dictionary<string, string> personagensDict = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
             {
                 { "A", "Adilson Konrad.png" }, { "B", "Beatriz Paiva.png" }, { "C", "Claro.png" },
                 { "D", "Douglas Baquiao.png" }, { "E", "Eduardo Takeo.png" }, { "G", "Guilherme Rey.png" },
@@ -65,50 +66,78 @@ namespace PI_3_Defensores_de_Hastings
                 { "T", "Toshio.png" }
             };
 
-            if (nivel == "1" && personagensDict.TryGetValue(letraPersonagem, out string nomeArquivo)) // :) Verifica se o personagem existe no dicionário
+            if (nivel == "1" && personagensDict.TryGetValue(letraPersonagem, out string nomeArquivo))
             {
-                string caminhoImagem = Path.Combine(@"C:\\Users\\willi\\Downloads\\Hastings\\imagens", nomeArquivo); // :) Monta o caminho da imagem do personagem
+                string caminhoImagem = Path.Combine(@"C:\Users\fernando.barreto\OneDrive - Solutta\Documentos\GitHub\Hastings\PI_3_Defensores_de_Hastings\imagens", nomeArquivo);
 
-                if (!File.Exists(caminhoImagem)) // :) Verifica se o arquivo da imagem existe
+                if (!File.Exists(caminhoImagem))
                 {
-                    MessageBox.Show($"Arquivo não encontrado: {caminhoImagem}"); // :) Exibe um alerta se a imagem não for encontrada
+                    MessageBox.Show($"Arquivo não encontrado: {caminhoImagem}");
                     return;
                 }
 
-                if (pnlPersonagem == null) // :) Se o painel do personagem ainda não foi criado, cria um novo painel
+                // Se o painel do personagem ainda não foi criado, cria e adiciona ao pictureBox1
+                if (pnlPersonagem == null)
                 {
                     pnlPersonagem = new Panel
                     {
-                        Size = new Size(50, 50), // :) Define o tamanho do painel
-                        BackgroundImageLayout = ImageLayout.Stretch, // :) Ajusta a imagem para ocupar todo o painel
-                        Location = new Point(275, 535) // :) Define a posição inicial do personagem
+                        Size = new Size(50, 50),
+                        BackgroundImageLayout = ImageLayout.Stretch,
+                        Location = new Point(275, 535)
                     };
-                    this.Controls.Add(pnlPersonagem); // :) Adiciona o painel ao formulário
+                    pictureBox1.Controls.Add(pnlPersonagem);
                 }
 
                 try
                 {
-                    using (FileStream fs = new FileStream(caminhoImagem, FileMode.Open, FileAccess.Read)) // :) Usa FileStream para carregar a imagem sem bloqueá-la
+                    using (FileStream fs = new FileStream(caminhoImagem, FileMode.Open, FileAccess.Read))
                     {
-                        pnlPersonagem.BackgroundImage = Image.FromStream(fs); // :) Define a imagem de fundo do painel como a imagem do personagem
+                        pnlPersonagem.BackgroundImage = Image.FromStream(fs);
                     }
-                    pnlPersonagem.BringToFront(); // :) Traz o personagem para frente de outros elementos da tela
+                    pnlPersonagem.BringToFront();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Erro ao carregar imagem: {ex.Message}"); // :) Exibe um erro caso algo dê errado ao carregar a imagem
+                    MessageBox.Show($"Erro ao carregar imagem: {ex.Message}");
                 }
             }
             else
             {
-                MessageBox.Show($"Personagem '{letraPersonagem}' não encontrado. Opções válidas: " + // :) Exibe um alerta caso a letra do personagem não seja válida
+                MessageBox.Show($"Personagem '{letraPersonagem}' não encontrado. Opções válidas: " +
                                 string.Join(", ", personagensDict.Keys));
             }
         }
 
+        private void PromoverPersonagem()
+        {
+            if (pnlPersonagem == null)
+            {
+                MessageBox.Show("Nenhum personagem para promover!");
+                return;
+            }
+
+            int novaPosicaoY = pnlPersonagem.Location.Y - 50;
+
+            if (novaPosicaoY < 0)
+            {
+                novaPosicaoY = 0;
+            }
+
+            pnlPersonagem.Location = new Point(pnlPersonagem.Location.X, novaPosicaoY);
+        }
+
         private void btnColocarPerso_Click(object sender, EventArgs e)
         {
-            Colocar1(); // :) Chama o método para posicionar o personagem ao clicar no botão
+            Colocar1();
+        }
+
+        private void btnPromover_Click(object sender, EventArgs e)
+        {
+            PromoverPersonagem();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
         }
     }
 }

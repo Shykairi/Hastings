@@ -166,10 +166,18 @@ namespace PI_3_Defensores_de_Hastings
 
         private void btnVerificarVez_Click(object sender, EventArgs e)
         {
+            // Obtém a string de verificação do jogo
             string verificacao = Jogo.VerificarVez(_idSala);
-            string[] vez = verificacao.Split(',');
 
-            lblMostraVez.Text = vez[0];
+            // Exibe a string completa no label que criamos para o estado do jogo
+            lblEstadoDoJogo.Text = verificacao;
+
+            // Se desejar continuar exibindo apenas a vez em lblMostraVez:
+            string[] partes = verificacao.Split(',');
+            if (partes.Length > 0)
+            {
+                lblMostraVez.Text = partes[0];
+            }
         }
 
         private void lstbPersonagens_SelectedIndexChanged(object sender, EventArgs e)
@@ -235,6 +243,44 @@ namespace PI_3_Defensores_de_Hastings
 
         private void label3_Click(object sender, EventArgs e)
         {
+        }
+
+        private void btnVotar_Click(object sender, EventArgs e)
+        {
+            int jogador = Convert.ToInt32(txtID.Text);
+            string senha = lblMostraSenha.Text;
+            string voto = textBox1.Text; // Assumindo que há um campo para capturar o voto
+
+            Jogo.Votar(jogador, senha, voto);
+        }
+
+        private void btnPromover_Click(object sender, EventArgs e)
+        {
+            int jogador = Convert.ToInt32(txtID.Text);
+            string senha = lblMostraSenha.Text;
+            string voto = textBox1.Text;
+
+            Jogo.Promover(jogador, senha, voto);
+        }
+
+        private void lblMostraSenha_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lstEstadoDoJogo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEstadoDoJogo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
