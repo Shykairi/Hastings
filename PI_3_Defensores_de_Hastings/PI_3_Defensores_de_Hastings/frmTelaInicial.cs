@@ -14,6 +14,8 @@ namespace PI_3_Defensores_de_Hastings // :) Define o namespace da aplicação
     public partial class frmTelaInicial : Form // :) Declara a classe frmTelaInicial que herda de Form
     {
         private string versao; // :) Declara uma variável privada para armazenar a versão
+        private frmLobby lobby; //reutiliza a mesma instancia
+        private Form1 tela1; //reutiliza a mesma instancia de form1
 
         public frmTelaInicial() // :) Construtor da classe frmTelaInicial
         {
@@ -28,7 +30,7 @@ namespace PI_3_Defensores_de_Hastings // :) Define o namespace da aplicação
         private void btnVoltar_Click(object sender, EventArgs e) // :) Evento de clique do botão btnVoltar
         {
             frmLobby lobby = new frmLobby(); // :) Cria uma nova instância do formulário frmLobby
-            lobby.ShowDialog(); // :) Exibe o formulário frmLobby como uma caixa de diálogo modal
+            lobby.Show(); // :) Exibe o formulário frmLobby como uma caixa de diálogo modal
         }
 
         private void btnCriarPartida_Click(object sender, EventArgs e) // :) Evento de clique do botão btnCriarPartida
@@ -36,7 +38,7 @@ namespace PI_3_Defensores_de_Hastings // :) Define o namespace da aplicação
             Form1 tela1 = new Form1(); // :) Cria uma nova instância do formulário Form1
             tela1.versao = this.versao; // :) Atribui a versão do formulário atual à propriedade versao de tela1
             tela1.AtualizarTela(); // :) Chama o método AtualizarTela do formulário tela1
-            tela1.ShowDialog(); // :) Exibe o formulário tela1 como uma caixa de diálogo modal
+            tela1.Show(); // :) Exibe o formulário tela1 como uma caixa de diálogo modal
         }
     }
 }
