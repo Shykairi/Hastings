@@ -73,6 +73,7 @@
     <Compile Include="frmLobbyDaPartida.Designer.cs">
       <DependentUpon>frmLobbyDaPartida.cs</DependentUpon>
     </Compile>
+    <Compile Include="Funções.cs" />
     <Compile Include="Partida.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

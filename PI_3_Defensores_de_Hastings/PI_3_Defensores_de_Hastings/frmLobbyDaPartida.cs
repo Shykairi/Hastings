@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using System;
 
-using System;
-using System.Collections.Generic;
+
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -12,8 +11,7 @@ using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-using KingMeServer;
+
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PI_3_Defensores_de_Hastings
@@ -86,7 +84,7 @@ namespace PI_3_Defensores_de_Hastings
             {
                 MessageBox.Show("Ocorreu um erro: " + ex.Message);
             }
-
+            
             string tempSetores = Jogo.ListarSetores();
             string[] setores = tempSetores.Split('\r');
 
@@ -98,6 +96,10 @@ namespace PI_3_Defensores_de_Hastings
         }
 
         private void btnColocarPersonagem_Click(object sender, EventArgs e)
+        {
+            Colocar();
+        }
+        private void Colocar()
         {
             string senha = txtSenha.Text;
             string TempSetor = txtEscolheSetor.Text;
@@ -112,7 +114,10 @@ namespace PI_3_Defensores_de_Hastings
             lstEstadoDoJogo.Items.Add(estadoDoJogo);
 
             // Essa label serve para pegar o estado do jogo em forma de string para que eu possa passar para o próximo forms
-            lblEstadoJogo.Text = estadoDoJogo;
+            string persoMapa = personagem;
+            string setorMapa = TempSetor;
+            string lugarMapa = setorMapa + "," + persoMapa;
+            lblEstadoJogo.Text = lugarMapa;
         }
 
         private void lstbJogadores_SelectedIndexChanged(object sender, EventArgs e)
