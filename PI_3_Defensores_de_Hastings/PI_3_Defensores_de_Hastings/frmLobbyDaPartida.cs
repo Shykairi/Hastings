@@ -13,6 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Security.Cryptography.X509Certificates;
 
 namespace PI_3_Defensores_de_Hastings
 {
@@ -29,18 +30,22 @@ namespace PI_3_Defensores_de_Hastings
             lblMostraSenha.Text = b;
 
             lblEstadoJogo.Visible = false;
+            txtID.Text = lblMostraID.Text; // O ID do jogador é obtido do label
+            txtSenha.Text = lblMostraSenha.Text; // A senha é obtida do label
         }
 
         private void bntComecar_Click(object sender, EventArgs e)
         {
             try
             {
+                
                 // Validação do ID do jogador
                 if (!int.TryParse(txtID.Text, out int idDoJogador))
                 {
                     MessageBox.Show("ID do jogador inválido. Insira um número válido.");
                     return;
                 }
+                
 
                 string senha = txtSenha.Text;
 
@@ -99,6 +104,8 @@ namespace PI_3_Defensores_de_Hastings
         {
             Colocar();
         }
+
+        private string _resultadoFinal; // Variável de instância para armazenar o resultado
         private void Colocar()
         {
             string senha = txtSenha.Text;
@@ -110,48 +117,20 @@ namespace PI_3_Defensores_de_Hastings
 
             string estadoDoJogo = Jogo.ColocarPersonagem(IdJogador, senha, setor, personagem);
 
+            string[] linhas = estadoDoJogo.Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
             lstEstadoDoJogo.Items.Clear();
-            lstEstadoDoJogo.Items.Add(estadoDoJogo);
+            
+            
+            List<string> linhasFormatadas = new List<string>();
 
-            // Essa label serve para pegar o estado do jogo em forma de string para que eu possa passar para o próximo forms
-            string persoMapa = personagem;
-            string setorMapa = TempSetor;
-            string lugarMapa = setorMapa + "," + persoMapa;
-            lblEstadoJogo.Text = lugarMapa;
+            foreach (string linha in linhas)
+            {  
+                lstEstadoDoJogo.Items.Add(linha);
+            }
+            
         }
 
-        private void lstbJogadores_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void frmLobbyDaPartida_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void lblNomeJogador_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void txtbNomeDoJogador_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void lblIdDaSala_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void txtbIdSala_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void txtbSenhaDaSala_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void lblSenha_Click(object sender, EventArgs e)
-        {
-        }
-
+       
         private void btnListarJogadores_Click(object sender, EventArgs e)
         {
             string ID = Jogo.ListarJogadores(_idSala);
@@ -165,127 +144,74 @@ namespace PI_3_Defensores_de_Hastings
             }
         }
 
-        private void txtID_TextChanged(object sender, EventArgs e)
-        {
-        }
+        
 
         private void btnVerificarVez_Click(object sender, EventArgs e)
         {
             // Obtém a string de verificação do jogo
             string verificacao = Jogo.VerificarVez(_idSala);
 
-            // Exibe a string completa no label que criamos para o estado do jogo
-            lblEstadoDoJogo.Text = verificacao;
+            
+            List<string> linhasFormatadas = new List<string>();
+
+            string[] atualizar = verificacao.Split('\n');
+            
+            lstbVerificarVez.Items.Clear(); // Limpa o ListBox antes de adicionar novos itens
+            
+            foreach (string linha in atualizar)
+            {
+                lstbVerificarVez.Items.Add(linha);
+                string[] setorJogador = linha.Split(',');
+                // Verifica se a linha tem exatamente duas partes (setor e personagem)
+                if (setorJogador.Length == 2)
+                {
+                    // Formata a linha no formato 'setor,personagem'
+                    string linhaFormatada = $"{setorJogador[0]},{setorJogador[1]}";
+                    linhasFormatadas.Add(linhaFormatada);
+                }
+
+
+            }
+            // Junta todas as linhas formatadas em uma única string, separadas por aspas simples
+            _resultadoFinal = string.Join("$", linhasFormatadas);
 
             // Se desejar continuar exibindo apenas a vez em lblMostraVez:
             string[] partes = verificacao.Split(',');
             if (partes.Length > 0)
             {
-                lblMostraVez.Text = partes[0];
+              lblMostraVez.Text = partes[0];
             }
         }
-
-        private void lstbPersonagens_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void lblMostraNome_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void lblSenha_Click_1(object sender, EventArgs e)
-        {
-        }
-
-        private void lblEscreverSenha_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void lstbVerificarVez_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            Jogo.ListarSetores();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Jogo.ListarSetores();
-        }
-
-        private void lstbSetores_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void lblSetor_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void txtCartas_Click(object sender, EventArgs e)
-        {
-        }
-
+  
         private void btnVerMapa_Click(object sender, EventArgs e)
         {
-            string estadodojogo = lblEstadoJogo.Text;
-            Form2 mapa = new Form2(estadodojogo);
+          
+            Form2 mapa = new Form2(_resultadoFinal);
             mapa.ShowDialog();
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-        }
-
+  
         private void btnVotar_Click(object sender, EventArgs e)
         {
             int jogador = Convert.ToInt32(txtID.Text);
             string senha = lblMostraSenha.Text;
-            string voto = textBox1.Text; // Assumindo que há um campo para capturar o voto
+            string voto = txtVoto.Text; // Assumindo que há um campo para capturar o voto
 
             Jogo.Votar(jogador, senha, voto);
         }
 
         private void btnPromover_Click(object sender, EventArgs e)
         {
+            promover();
+        }
+
+        private void promover()
+        {
             int jogador = Convert.ToInt32(txtID.Text);
-            string senha = lblMostraSenha.Text;
-            string voto = textBox1.Text;
+            string senha = txtSenha.Text;
+            string promocao = txtEscolhaPersonagem.Text;
 
-            Jogo.Promover(jogador, senha, voto);
+            Jogo.Promover(jogador, senha, promocao);
         }
 
-        private void lblMostraSenha_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lstEstadoDoJogo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblEstadoDoJogo_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
