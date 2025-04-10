@@ -46,28 +46,38 @@
             // 
             // btnColocarPerso
             // 
+            this.btnColocarPerso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnColocarPerso.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnColocarPerso.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnColocarPerso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnColocarPerso.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnColocarPerso.Location = new System.Drawing.Point(615, 585);
             this.btnColocarPerso.Name = "btnColocarPerso";
             this.btnColocarPerso.Size = new System.Drawing.Size(75, 23);
             this.btnColocarPerso.TabIndex = 1;
             this.btnColocarPerso.Text = "Colocar Personagem";
-            this.btnColocarPerso.UseVisualStyleBackColor = true;
+            this.btnColocarPerso.UseVisualStyleBackColor = false;
             this.btnColocarPerso.Click += new System.EventHandler(this.btnColocarPerso_Click);
             // 
             // btnPromover
             // 
+            this.btnPromover.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnPromover.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnPromover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPromover.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPromover.Location = new System.Drawing.Point(615, 547);
             this.btnPromover.Name = "btnPromover";
             this.btnPromover.Size = new System.Drawing.Size(75, 23);
             this.btnPromover.TabIndex = 2;
             this.btnPromover.Text = "Promover";
-            this.btnPromover.UseVisualStyleBackColor = true;
+            this.btnPromover.UseVisualStyleBackColor = false;
             this.btnPromover.Click += new System.EventHandler(this.btnPromover_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(802, 721);
             this.Controls.Add(this.btnPromover);
             this.Controls.Add(this.btnColocarPerso);
