@@ -213,5 +213,19 @@ namespace PI_3_Defensores_de_Hastings
             Jogo.Promover(jogador, senha, promocao);
         }
 
+        private void lblColocarSetor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEscolhaPersonagem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lstbSetores_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

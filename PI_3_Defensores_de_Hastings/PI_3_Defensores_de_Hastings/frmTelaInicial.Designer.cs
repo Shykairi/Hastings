@@ -36,59 +36,69 @@
             // 
             // btnAbrirLobby
             // 
-            this.btnAbrirLobby.Font = new System.Drawing.Font("Sitka Display", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbrirLobby.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnAbrirLobby.Location = new System.Drawing.Point(352, 342);
+            this.btnAbrirLobby.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnAbrirLobby.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbrirLobby.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAbrirLobby.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAbrirLobby.Font = new System.Drawing.Font("Sitka Display", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnAbrirLobby.ForeColor = System.Drawing.Color.Black;
+            this.btnAbrirLobby.Location = new System.Drawing.Point(352, 421);
             this.btnAbrirLobby.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAbrirLobby.Name = "btnAbrirLobby";
             this.btnAbrirLobby.Size = new System.Drawing.Size(227, 72);
             this.btnAbrirLobby.TabIndex = 0;
+            this.btnAbrirLobby.TabStop = false;
             this.btnAbrirLobby.Text = "Lobby";
-            this.btnAbrirLobby.UseVisualStyleBackColor = true;
+            this.btnAbrirLobby.UseVisualStyleBackColor = false;
             this.btnAbrirLobby.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Edwardian Script ITC", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTitulo.Location = new System.Drawing.Point(295, 22);
+            this.lblTitulo.Font = new System.Drawing.Font("Edwardian Script ITC", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblTitulo.Location = new System.Drawing.Point(267, 23);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(324, 94);
+            this.lblTitulo.Size = new System.Drawing.Size(390, 113);
             this.lblTitulo.TabIndex = 1;
             this.lblTitulo.Text = "King Me!";
             // 
             // lblControleVersao
             // 
             this.lblControleVersao.AutoSize = true;
-            this.lblControleVersao.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblControleVersao.Location = new System.Drawing.Point(864, 615);
+            this.lblControleVersao.Font = new System.Drawing.Font("Arial", 16F);
+            this.lblControleVersao.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblControleVersao.Location = new System.Drawing.Point(876, 610);
             this.lblControleVersao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblControleVersao.Name = "lblControleVersao";
-            this.lblControleVersao.Size = new System.Drawing.Size(61, 23);
+            this.lblControleVersao.Size = new System.Drawing.Size(81, 25);
             this.lblControleVersao.TabIndex = 2;
             this.lblControleVersao.Text = "Versao";
             // 
             // btnCriarPartida
             // 
             this.btnCriarPartida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnCriarPartida.Font = new System.Drawing.Font("Sitka Display", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCriarPartida.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnCriarPartida.Location = new System.Drawing.Point(352, 205);
+            this.btnCriarPartida.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCriarPartida.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnCriarPartida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCriarPartida.Font = new System.Drawing.Font("Sitka Display", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnCriarPartida.ForeColor = System.Drawing.Color.Black;
+            this.btnCriarPartida.Location = new System.Drawing.Point(352, 251);
             this.btnCriarPartida.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCriarPartida.Name = "btnCriarPartida";
             this.btnCriarPartida.Size = new System.Drawing.Size(227, 76);
             this.btnCriarPartida.TabIndex = 3;
+            this.btnCriarPartida.TabStop = false;
             this.btnCriarPartida.Text = "Criar Partida";
             this.btnCriarPartida.UseVisualStyleBackColor = false;
             this.btnCriarPartida.Click += new System.EventHandler(this.btnCriarPartida_Click);
             // 
             // frmTelaInicial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkRed;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(934, 658);
             this.Controls.Add(this.btnCriarPartida);
             this.Controls.Add(this.lblControleVersao);
