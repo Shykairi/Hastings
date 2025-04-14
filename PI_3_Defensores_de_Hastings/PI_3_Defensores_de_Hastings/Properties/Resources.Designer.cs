@@ -183,6 +183,16 @@ namespace PI_3_Defensores_de_Hastings.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap tabuleiro {
+            get {
+                object obj = ResourceManager.GetObject("tabuleiro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Toshio {
             get {
                 object obj = ResourceManager.GetObject("Toshio", resourceCulture);
