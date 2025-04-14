@@ -43,3 +43,4 @@ C:\Users\willi\Downloads\Hastings\PI_3_Defensores_de_Hastings\PI_3_Defensores_de
 C:\Users\João Michael\Documents\GitHub\Hastings\PI_3_Defensores_de_Hastings\PI_3_Defensores_de_Hastings\obj\Debug\PI_3_Defensores_de_Hastings.frmLobby.resources
 C:\Users\João Michael\Documents\GitHub\Hastings\PI_3_Defensores_de_Hastings\PI_3_Defensores_de_Hastings\obj\Debug\PI_3_Defensores_de_Hastings.frmLobbyDaPartida.resources
 C:\Users\João Michael\Documents\GitHub\Hastings\PI_3_Defensores_de_Hastings\PI_3_Defensores_de_Hastings\obj\Debug\PI_3_Defensores_de_Hastings.frmTelaInicial.resources
+C:\Users\João Michael\Documents\GitHub\Hastings\PI_3_Defensores_de_Hastings\PI_3_Defensores_de_Hastings\obj\Debug\PI_3_Defensores_de_Hastings.Form2.resources
