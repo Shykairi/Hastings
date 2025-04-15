@@ -16,19 +16,7 @@ namespace PI_3_Defensores_de_Hastings // :) Define o namespace da aplicação
         public frmLobby() // :) Construtor da classe frmLobby
         {
             InitializeComponent(); // :) Inicializa os componentes do formulário
-
-            dgvPartidas.DataSource = Partida.ListarPartidas(); // :) Define a fonte de dados do DataGridView com a lista de partidas
-
-            dgvPartidas.SelectionMode = DataGridViewSelectionMode.FullRowSelect; // :) Define a seleção para linhas inteiras
-            dgvPartidas.EditMode = DataGridViewEditMode.EditProgrammatically; // :) Define o modo de edição para ser feito programaticamente
-            dgvPartidas.AllowUserToResizeRows = false; // :) Impede que o usuário redimensione as linhas
-            dgvPartidas.AllowUserToResizeColumns = false; // :) Impede que o usuário redimensione as colunas
-            dgvPartidas.RowHeadersVisible = false; // :) Oculta os cabeçalhos das linhas
-            dgvPartidas.MultiSelect = false; // :) Permite a seleção de apenas uma linha
-
-            dgvPartidas.Columns[0].Visible = true; // :) Torna visível a primeira coluna
-            dgvPartidas.Columns[1].HeaderText = "Nome da Partida"; // :) Define o texto do cabeçalho da segunda coluna
-            dgvPartidas.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill; // :) Configura a segunda coluna para preencher o espaço disponível
+            tmrVerificarPartida.Enabled = true;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) // :) Evento de clique em uma célula do DataGridView
@@ -81,6 +69,30 @@ namespace PI_3_Defensores_de_Hastings // :) Define o namespace da aplicação
             this.Close(); // :) Fecha o formulário atual
         }
 
+        private void ListarPartidas()
+        {
+            dgvPartidas.DataSource = Partida.ListarPartidas(); // :) Define a fonte de dados do DataGridView com a lista de partidas
+
+            dgvPartidas.SelectionMode = DataGridViewSelectionMode.FullRowSelect; // :) Define a seleção para linhas inteiras
+            dgvPartidas.EditMode = DataGridViewEditMode.EditProgrammatically; // :) Define o modo de edição para ser feito programaticamente
+            dgvPartidas.AllowUserToResizeRows = false; // :) Impede que o usuário redimensione as linhas
+            dgvPartidas.AllowUserToResizeColumns = false; // :) Impede que o usuário redimensione as colunas
+            dgvPartidas.RowHeadersVisible = false; // :) Oculta os cabeçalhos das linhas
+            dgvPartidas.MultiSelect = false; // :) Permite a seleção de apenas uma linha
+
+            dgvPartidas.Columns[0].Visible = true; // :) Torna visível a primeira coluna
+            dgvPartidas.Columns[1].HeaderText = "Nome da Partida"; // :) Define o texto do cabeçalho da segunda coluna
+            dgvPartidas.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill; // :) Configura a segunda coluna para preencher o espaço disponível
+        }
+
+        private void tmrVerificarPartida_Tick(object sender, EventArgs e)
+        {
+            tmrVerificarPartida.Enabled = false;
+            lblTimer.Text += DateTime.Now.ToString() + "\n";
+            ListarPartidas();
+            tmrVerificarPartida.Enabled = true;
+        }
+
         private void textBox1_TextChanged(object sender, EventArgs e) // :) Evento de alteração de texto no textBox1
         {
             // :) Método vazio, sem implementação
@@ -105,5 +117,6 @@ namespace PI_3_Defensores_de_Hastings // :) Define o namespace da aplicação
         {
             // :) Método vazio, sem implementação
         }
+
     }
 }

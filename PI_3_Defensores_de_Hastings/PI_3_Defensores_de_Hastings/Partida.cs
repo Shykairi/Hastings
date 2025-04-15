@@ -26,7 +26,7 @@ namespace PI_3_Defensores_de_Hastings
 
             List<Partida> ListaPartidas = new List<Partida>();    
 
-            for(int i = 0; i < partidas.Length - 1; i++)
+            for(int i = 0; i < partidas.Length; i++)
             {
                 string partida = partidas[i];
                 string[] dados = partida.Split(',');

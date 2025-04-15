@@ -138,12 +138,12 @@
             // 
             this.label4.AccessibleRole = System.Windows.Forms.AccessibleRole.Diagram;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Edwardian Script ITC", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label4.Location = new System.Drawing.Point(231, 9);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(480, 76);
+            this.label4.Size = new System.Drawing.Size(739, 73);
             this.label4.TabIndex = 7;
             this.label4.Text = "Defensores de Hastings\r\n";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -194,7 +194,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.ClientSize = new System.Drawing.Size(934, 658);
+            this.ClientSize = new System.Drawing.Size(1064, 658);
             this.Controls.Add(this.btnVoltaJogo);
             this.Controls.Add(this.idDaPartida);
             this.Controls.Add(this.label5);
