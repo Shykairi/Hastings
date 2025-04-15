@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lstbJogadores = new System.Windows.Forms.ListBox();
             this.lblJogadores = new System.Windows.Forms.Label();
             this.bntComecar = new System.Windows.Forms.Button();
@@ -65,6 +66,7 @@
             this.txtVoto = new System.Windows.Forms.TextBox();
             this.lblEstadoJogo = new System.Windows.Forms.Label();
             this.lblUltimasJogadas = new System.Windows.Forms.Label();
+            this.tmrVez = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // lstbJogadores
@@ -474,6 +476,11 @@
             this.lblUltimasJogadas.TabIndex = 40;
             this.lblUltimasJogadas.Text = "Jogadas:";
             // 
+            // tmrVez
+            // 
+            this.tmrVez.Interval = 3000;
+            this.tmrVez.Tick += new System.EventHandler(this.tmrVez_Tick);
+            // 
             // frmLobbyDaPartida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -564,5 +571,6 @@
         private System.Windows.Forms.TextBox txtVoto;
         private System.Windows.Forms.Label lblEstadoJogo;
         private System.Windows.Forms.Label lblUltimasJogadas;
+        private System.Windows.Forms.Timer tmrVez;
     }
 }

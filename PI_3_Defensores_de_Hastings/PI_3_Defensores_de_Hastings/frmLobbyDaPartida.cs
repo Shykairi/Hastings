@@ -20,11 +20,18 @@ namespace PI_3_Defensores_de_Hastings
     public partial class frmLobbyDaPartida : Form
     {
         private int _idSala;
+        private string _idVez;
+        private string _suaVez;
+        private List<string> _letras = new List<string> {};
+
 
         public frmLobbyDaPartida(int idSala, string a, string b)
         {
             InitializeComponent();
+            tmrVez.Enabled = true;
             _idSala = idSala;
+            _idVez = a;
+
 
             lblMostraID.Text = a;
             lblMostraSenha.Text = b;
@@ -148,41 +155,105 @@ namespace PI_3_Defensores_de_Hastings
 
         private void btnVerificarVez_Click(object sender, EventArgs e)
         {
-            // Obtém a string de verificação do jogo
+            VerificarVez();
+        }
+
+        private void VerificarVez()
+        {
+            //obtém a string de verificação do jogo
             string verificacao = Jogo.VerificarVez(_idSala);
 
-            
+
             List<string> linhasFormatadas = new List<string>();
 
             string[] atualizar = verificacao.Split('\n');
-            
-            lstbVerificarVez.Items.Clear(); // Limpa o ListBox antes de adicionar novos itens
-            
+
+            lstbVerificarVez.Items.Clear(); //limpa o ListBox antes de adicionar novos itens
+
             foreach (string linha in atualizar)
             {
                 lstbVerificarVez.Items.Add(linha);
                 string[] setorJogador = linha.Split(',');
-                // Verifica se a linha tem exatamente duas partes (setor e personagem)
+                //verifica se a linha tem exatamente duas partes (setor e personagem)
                 if (setorJogador.Length == 2)
                 {
-                    // Formata a linha no formato 'setor,personagem'
+                    //formata a linha no formato 'setor,personagem'
                     string linhaFormatada = $"{setorJogador[0]},{setorJogador[1]}";
                     linhasFormatadas.Add(linhaFormatada);
                 }
 
 
             }
-            // Junta todas as linhas formatadas em uma única string, separadas por aspas simples
+            //junta todas as linhas formatadas em uma única string, separadas por aspas simples
             _resultadoFinal = string.Join("$", linhasFormatadas);
 
-            // Se desejar continuar exibindo apenas a vez em lblMostraVez:
+            //se desejar continuar exibindo apenas a vez em lblMostraVez:
             string[] partes = verificacao.Split(',');
             if (partes.Length > 0)
             {
-              lblMostraVez.Text = partes[0];
+                _suaVez = partes[0];
+                lblMostraVez.Text = partes[0];
+            }
+
+        }
+
+        private void robo()
+        {
+            List<string> letrasDispo = new List<string>{"A", "B", "C", "D", "E", "G", "H", "K",
+                "L", "M", "Q", "R", "T"};
+            Random randomLetras = new Random();
+            int indice = randomLetras.Next(letrasDispo.Count);
+            string letra = letrasDispo[indice];
+            _letras.Add(letra);
+
+            
+
+            Random nivelrand = new Random();
+
+            int nivel = nivelrand.Next(1, 4);
+
+
+            if (_suaVez == _idVez)
+            {
+                for (int i = 0; i < _letras.Count; i++)
+                {
+                    if (letra != _letras[i] && letra != _letras[i + 1] && letra != _letras[i + 2] && letra != _letras[i + 3])
+                    {
+                        colocarRobo(letra, nivel);
+
+                    }
+
+                }
+
+            }
+
+        }
+
+   
+
+        private void colocarRobo(string person, int nivel)
+        {
+            string senha = txtSenha.Text;
+            int setor = nivel;
+            string personagem = person;
+            string TempIdJogador = lblMostraID.Text;
+            int IdJogador = Convert.ToInt32(TempIdJogador);
+
+            string estadoDoJogo = Jogo.ColocarPersonagem(IdJogador, senha, setor, personagem);
+
+            string[] linhas = estadoDoJogo.Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+            lstEstadoDoJogo.Items.Clear();
+
+
+            List<string> linhasFormatadas = new List<string>();
+
+            foreach (string linha in linhas)
+            {
+                lstEstadoDoJogo.Items.Add(linha);
             }
         }
-  
+
+
         private void btnVerMapa_Click(object sender, EventArgs e)
         {
           
@@ -225,6 +296,15 @@ namespace PI_3_Defensores_de_Hastings
 
         private void lstbSetores_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void tmrVez_Tick(object sender, EventArgs e)
+        {
+            tmrVez.Enabled = false;
+            VerificarVez();
+            robo();
+            tmrVez.Enabled = true;
 
         }
     }
